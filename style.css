@@ -1,0 +1,251 @@
+/* =====================
+   GLOBAL STYLES
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #111111;
+    line-height: 1.6;
+}
+
+a, button, .product-card {
+    transition: all 0.3s ease;
+}
+
+/* =====================
+   CONTAINER
+===================== */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #ffffff;
+    border-bottom: 2px solid #e10600;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e10600;
+}
+
+.logo span {
+    color: #555555;
+}
+
+nav a {
+    margin-left: 25px;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #e10600;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* =====================
+   CATEGORY SECTION
+===================== */
+.category-section {
+    background-color: #e10600; /* Red rectangle behind section */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+/* Headers inside red section */
+.category-section .category-title {
+    color: #ffffff; /* White text */
+    margin-bottom: 30px;
+}
+
+/* Product cards stay white */
+.category-section .product-card {
+    background: #ffffff;
+}
+
+/* =====================
+   PRODUCT GRID
+===================== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* =====================
+   PRODUCT CARDS
+===================== */
+.product-card {
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #000000;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.product-card span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #e10600;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+button {
+    padding: 10px 20px;
+    background: #e10600;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #c40000;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* =====================
+   PRODUCT MODAL
+===================== */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #e10600;
+}
+
+.modal-content p {
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+.modal-content h3 {
+    color: #e10600;
+    margin: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #e10600;
+}
+
+/* =====================
+   CART SIDEBAR
+===================== */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-left: 2px solid #e10600;
+    transition: 0.3s ease;
+    z-index: 1100;
+    overflow-y: auto;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;%
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;

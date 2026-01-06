@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedCore Gaming Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Cyber<span>Vault</span></div>
+    <nav>
+        <a href="#" id="home-btn">Home</a>
+        <a href="#" id="laptop-btn">Laptops</a>
+        <a href="#" id="accessories-btn">Accessories</a>
+        <a href="#" id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<section class="products">
+    <!-- =====================
+         GAMING LAPTOPS
+    ===================== -->
+    <div class="category-section">
+        <h2 class="category-title">Gaming Laptops</h2>
+        <div class="product-grid">
+            <div class="product-card" onclick="openProduct(1)" data-category="laptop">
+                <img src="https://via.placeholder.com/300x200">
+                <h3>HP Victus 15-FA2401TX</h3>
+                <span>₱62,990.00</span>
+            </div>
+
+            <div class="product-card" onclick="openProduct(4)" data-category="laptop">
+                <img src="https://via.placeholder.com/300x200">
+                <h3>Lenovo Legion 5 15IRX10</h3>
+                <span>₱81,995.00</span>
+            </div>
+
+            <div class="product-card" onclick="openProduct(5)" data-category="laptop">
+                <img src="https://via.placeholder.com/300x200">
+                <h3>Asus FA401KH-RG009WSM TUF Gaming A14</h3>
+                <span>₱95,995.00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================
+         ACCESSORIES
+    ===================== -->
+    <div class="category-section">
+        <h2 class="category-title">Gaming Accessories</h2>
+        <div class="product-grid">
+            <div class="product-card" onclick="openProduct(2)" data-category="accessories">
+                <img src="https://via.placeholder.com/300x200">
+                <h3>Logitech G102 Gaming Mouse</h3>
+                <span>₱2,499</span>
+            </div>
+
+            <div class="product-card" onclick="openProduct(3)" data-category="accessories"> 
+                <img src="https://via.placeholder.com/300x200">
+                <h3>HyperX Cloud Stinger 2</h3>
+                <span>₱1,700</span>
+            </div>
+
+            <div class="product-card" onclick="openProduct(6)" data-category="accessories">
+                <img src="https://via.placeholder.com/300x200">
+                <h3>Gaming Headset</h3>
+                <span>₱4,499</span>
+            </div>
+
+            <div class="product-card" onclick="openProduct(7)" data-category="accessories">
+                <img src="https://via.placeholder.com/300x200">
+                <h3>AULA S2022 Mechanical Keyboard</h3>
+                <span>₱995.00</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCT MODAL -->
+<div class="modal" id="product-modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeProduct()">×</span>
+        <img id="modal-img">
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+        <h3 id="modal-price"></h3>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+</div>
+
+<!-- CART SIDEBAR -->
+<div class="cart" id="cart">
+    <div class="cart-header">
+        <h2>Shopping Cart</h2>
+        <span class="cart-close" onclick="toggleCart()">×</span>
+    </div>
+
+    <div id="cart-items"></div>
+    <h3>Total: ₱<span id="cart-total">0</span></h3>
+    <button class="checkout">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
