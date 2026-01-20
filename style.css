@@ -117,9 +117,9 @@ nav a:hover::after {
 }
 
 .product-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
     border-radius: 8px;
     margin-bottom: 12px;
 }
@@ -192,7 +192,9 @@ button:active {
 }
 
 .modal-content img {
-    width: 100%;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
 }

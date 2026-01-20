@@ -6,49 +6,49 @@ const products = [
         id: 1,
         name: "HP Victus 15-FA2401TX ",
         price: 62990,
-        img: "https://via.placeholder.com/400x250",
+        img: "images/victus.jpg",
         desc: "Intel Core i5-13420H • RTX 5050 • 16GB 5200Mhz RAM • 512GB SSD • 15.6 Full-HD IPS 144Hz Display"
     },
     {
         id: 2,
         name: "Logitech G1012 Gaming Mouse",
         price: 1060,
-        img: "https://via.placeholder.com/400x250",
+        img: "images/mouse.jpg",
         desc: "200-8000 DPI • RGB Lighting • Ergonomic Design"
     },
     {
         id: 3,
         name: "HyperX CLoud Stinger 2",
         price: 1700,
-        img: "https://via.placeholder.com/400x250",
+        img: "iamges/headset.jpg",
         desc: "Spatial Audio • Easy Access Audio Controls • Crisp, Clear in-game sound"
     },
     {
         id: 4,
         name: "Lenovo Legion 5 15IRX10",
         price: 81995,
-        img: "https://via.placeholder.com/400x250",
+        img: "images/legion.jpg",
         desc: "Intel i7-13650HX • RTX 5050 • 16GB 4800Mhz RAM • 512GB SSD • 15.3 WUXGA (1920x1200) IPS 165Hz Display"
     },
     {
         id: 5,
         name: "Asus FA401KH-RG009WSM TUF Gaming A14",
         price: 95995,
-        img: "https://via.placeholder.com/400x250",
+        img: "images/tuf14.jpg",
         desc: "AMD Ryzen Ai 7-350 • RTX 5050 • 16GB RAM • 1TB SSD • 14 Full-HD 165Hz"
     },
     {
         id: 6,
-        name: "Gaming Headset",
+        name: "TTRacing Duo V4 Pro Air Threads Fabric Gaming Chair",
         price: 4499,
-        img: "https://via.placeholder.com/400x250",
-        desc: "7.1 Surround Sound • Noise Cancelling Mic • RGB Lighting"
+        img: "images/chair.jpg",
+        desc: "Cold Cure Foam • Machine Embroidery • Heavy Duty Nylon Base "
     },
     {
         id: 7,
         name: "Aula S2022 Mechanical Keyboard",
         price: 1299,
-        img: "https://via.placeholder.com/400x250",
+        img: "images/keyboard.jpg",
         desc: "Two-color injection molded PBT keycaps • Gaming Mechanical Keyboard • 104 Keys, 100% layout"
     }
 ];
